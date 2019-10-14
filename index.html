@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hola, soy Oscar Palomino.</title>
+    <link rel="icon" type="image/png" href="public/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <figure>
+                <img src="public/logo.png" alt="Logo." />
+            </figure>
+            <nav class="menu">
+                <ul>
+                    <li><a class="link" href="#portafolio">Portafolio.</a></li>
+                    <li><a class="link" href="#experiencia">Experiencia.</a></li>
+                    <li><a class="link" href="#contacto" id="trabajemos">Trabajemos juntos.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Presentación. -->
+    <section id="presentacion" class="hero">
+        <div class="container">
+            <h1>¡Hola! Soy <strong>Oscar Palomino</strong>.  <br>Soy <strong>ingeniero industrial </strong><br>y soy un apasionado por la <br> <strong>tecnología</strong> y la <strong>enseñanza</strong>.</h1>
+            <img src="public/hero.jpg" height="300px" alt="" class="hero-image">
+        </div>
+    </section>
+    <!-- Sección Portafolio. -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio (Proyectos destacados).</h2>
+            <article class="project">
+                <div class="project-details">
+                        <h3 class="project-title">Platzi Video.</h3>
+                        <h6 class="project-course">React Native / React</h6>
+                        <p class="project-date"> <small> <strong> Fecha: </strong>01/07/2018</small></p>
+                        <p class="project-link"><small> <strong> Puedes verlo en: <a href="www.platzi.com/react"></strong>www.platzi.com/react</small></a></p>
+                        <p class="project-description"> Patzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
+                </div>
+                    <figure class="project-imageContainer">
+                        <img src="public/react.png" alt="React" class="project-image">
+                    </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                        <h3 class="project-title">Platzi Video.</h3>
+                        <h6 class="project-course">React Native / React</h6>
+                        <p class="project-date"> <small> <strong> Fecha: </strong>01/07/2018</small></p>
+                        <p class="project-link"><small> <strong> Puedes verlo en: <a href="www.platzi.com/react"></strong>www.platzi.com/react</small></a></p>
+                        <p class="project-description"> Patzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
+                </div>
+                    <figure class="project-imageContainer">
+                        <img src="public/react.png" alt="React" class="project-image">
+                    </figure>
+            </article>
+        </div>
+    </section>
+    <!--Sección Experiencia.-->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <h2>Más sobre mi experiencia.</h2>
+            <div class="jobs">
+                <article class="jobs-box">
+                    <figure class="jobs-box-imageContainer">
+                    <img src="public/bucarelia.jpg" width="300" height="200" alt="Palmas oleaginosas" class="job-image">
+                    </figure>
+                    <div class="job-detail">
+                        <h3 class="job-company">Palmas oleaginosas Bucarelia S.A. 2008 - 2009</h3>
+                        <p class="job-companyInfo">Trabajé como técnico en procesos químicos industriales, como analista de laboratorio del área de calidad.</p>
+                        <a href="#" class="job-link">Más información.</a>
+                    </div>
+                </article>
+                <article class="jobs-box">
+                    <figure class="jobs-box-imageContainer">
+                    <img src="public/schlumberger.jpg" width="300" height="200" alt="Schlumberger" class="job-image">
+                    </figure>
+                    <div class="job-detail">
+                        <H3 class="job-company">Schlumberger Surenco S.A. 2015.</H3>
+                        <p class="job-companyInfo">Trabajé como tecnólogo electrónico en el laboratorio de electrónica del área de Wireline.</p>
+                        <a href="#" class="job-link">Más información.</a>
+                    </div>
+                </article>
+                <article class="jobs-box">
+                    <figure class="jobs-box-imageContainer">
+                    <img src="public/motoestetica.jpg" alt="CDA MotoEstética." width="300" height="200" class="job-image">
+                    </figure>
+                    <div class="job-detail">    
+                        <h3 class="job-company">Check Ltda. 2018 - Actual.</h3>
+                        <p class="job-companyInfo">Trabajo actualmente como ingeniero industrial, ejerciendo como director técnico del CDA Motoestética.</p>
+                        <a href="#" class="job-link">Más información.</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Trabajemos juntos. -->
+    <section id="contacto" class="contact">
+        <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                    <label for="email">¿Trabajamos juntos?</label><br>
+                    <input type="text" placeholder="Déjame tu email." id="email">
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://twitter.com/OscarPalominoC" class="social-link twitter"></a>
+                    <a href="https://github.com/Zim-op" class="social-link github"></a>
+                    <a href="https://www.facebook.com/oskr.epc" class="social-link facebook"></a>
+                    <a href="https://www.instagram.com/oscar.palominoc/" class="social-link instagram"></a>
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p class="footer-paragraph">Curso de desarrollo web online 2019.</p>
+                <a href="https://platzi.com"><img src="public/platzi.png" width="106" height="40" alt="" class="footer-img"></a>
+            </div>
+            <div class="footer-credits">
+                <p>Designed with &lt;3 by <a href="https://twitter.com/OscarPalominoC" target="_blank">@OscarPalominoC</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

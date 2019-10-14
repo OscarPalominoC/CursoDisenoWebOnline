@@ -1,0 +1,303 @@
+/*
+Selector de etiqueta. 
+Header, section, article, nav, etc.
+*/
+body{
+    margin: 0px;
+    color:#49504a;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;/*  */
+    /* font-style: italic; */
+}
+h1{
+    line-height: 180%;
+    font-size: 30px;
+    letter-spacing: -.2px;
+    color: white;
+    align-self: center;
+    /* margin-right: 450px;
+    margin-left: 50px; */
+    /* margin-left: 50px; */
+    /* text-transform: lowercase; */
+    /* text-decoration: underline; */
+}
+h2{
+    color: #026fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    margin: 0px auto;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+header {
+    background: #39282b;
+    display: flex;
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+header figure{
+    margin: 0;
+    display: flex;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav{
+    height: inherit;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    color: white;
+    margin: auto;
+    margin-right: 0px;
+    height: inherit;
+    
+}
+nav ul li{
+    list-style: none;
+    text-align: center;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+/* Selector descendente.
+Elemento hijo de algún otro elemento.
+nav, div, a, ol, li, ul
+body header div nav ol li a {} Extremadamente largo
+/* Es buena práctica utilizar las clases, de esta manera se simplifica el código y no habría necesidad de utilizar el selector descendente */
+
+/* Selector de clase
+Da estilos a las clases y se identifica con un punto, ej:
+*/
+.link {
+    color: #e6e5e6;
+}
+
+/* Selector de id. */
+
+#presentacion strong{
+    color: #026fff;
+}
+/* Sección Hero. */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    background-color: #39282b;
+    align-items: center;
+}
+.hero-image{
+    object-fit: cover;
+}
+
+/* Estilos, portafolio. */ 
+.portfolio{
+    background: #fafafa;
+    margin: 0;
+}
+.project{
+    display: flex;
+    /* box-shadow: #39282b; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+    background: white;
+    margin-top: 20px;
+}
+.project-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.project-course, project-date, .project-link{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-description{
+    font-size: 20px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-details{
+    width: 50%;
+}
+.project-imageContainer{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Estilos experiencia laboral. */
+.experience{
+    background: #fafafa;
+}
+.jobs{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.jobs-box{
+    width: 300px;
+    flex-shrink: 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+    margin-bottom: 0;
+}
+.jobs-box-imageContainer{
+    margin: 0%;
+}
+.jobs-box-imageContainer img{
+    object-fit: cover;
+}
+.job-detail{
+    margin: 20px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px 40px;
+    align-items: center;
+    display: grid;
+}
+.job-companyInfo{
+    text-align: left;
+}
+.job-link{
+    text-align: center;
+    color: #056fff;
+    border: 1px solid #056fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+
+    
+}
+
+/* Sección de contacto. */
+.contact{
+    background-color: #0063ff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    /* border: 1px solid red; */
+    margin: initial;
+    padding: 50px;
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin-right: 10px;
+}
+.social-link.twitter{
+    background-image: url('../public/twitter.png');
+    
+}
+.social-link.facebook{
+    background-image: url('../public/facebook.png');
+}
+.social-link.github{
+    background-image: url('../public/github.png');
+}
+.social-link.instagram{
+    background-image: url('../public/instagram.png');
+}
+.form-email{
+    padding-left: 50px;
+}
+.form-email input{
+    border-color: gray;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url('../public/mail.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+.form-email label{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+/* Footer */
+footer{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #39282b;
+    padding: 0 10px;
+}
+.footer-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-credits{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: inherit;;
+}
+.footer-credits a{
+    color: white;
+    text-decoration: none;
+}
