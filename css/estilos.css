@@ -220,6 +220,13 @@ Da estilos a las clases y se identifica con un punto, ej:
 
     
 }
+/* Video */
+.video{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 10px;
+}
 
 /* Sección de contacto. */
 .contact{
@@ -365,12 +372,15 @@ footer{
     /* Sección Hero */
     .hero{
         justify-content: center;
+        position: relative;
+        overflow: hidden;
     }
     h1{
         font-size: 2em;
         position: absolute;
         text-align: center;
         margin-top: 1.3em;
+        z-index: 2;
     }
     .hero-imageContainer{
         max-width: 100%;
@@ -378,6 +388,7 @@ footer{
     .hero-image{
         width: 100%;
         object-fit: cover;
+        z-index: 1;
     }
 
     /* Sección portafolio */
