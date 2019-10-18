@@ -18,7 +18,8 @@ h1{
     font-size: 30px;
     letter-spacing: -.2px;
     color: white;
-    align-self: center;
+    margin: auto;
+    text-align: center;
     /* margin-right: 450px;
     margin-left: 50px; */
     /* margin-left: 50px; */
@@ -26,7 +27,7 @@ h1{
     /* text-decoration: underline; */
 }
 h2{
-    color: #026fff;
+    color: #026fff !important;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     margin: 0px auto;
@@ -43,17 +44,19 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    flex-wrap: wrap;
+    /* position: sticky;
+    top: 0; */
 }
 header figure{
-    margin: 0;
-    display: flex;
+    margin: 0;/* 
+    display: flex; */
 }
 
 ol, ul{
     margin: 0;
     padding: 0;
 }
-
 header nav{
     height: inherit;
     justify-content: center;
@@ -81,11 +84,13 @@ nav ul li a{
     padding: 0 5px;
 }
 .container{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
+    flex-wrap: inherit;
+    flex: 1;
 }
 
 /* Selector descendente.
@@ -113,9 +118,11 @@ Da estilos a las clases y se identifica con un punto, ej:
     height: 300px;
     background-color: #39282b;
     align-items: center;
+    
 }
 .hero-image{
     object-fit: cover;
+    height: 300px;
 }
 
 /* Estilos, portafolio. */ 
@@ -129,10 +136,11 @@ Da estilos a las clases y se identifica con un punto, ej:
     border: 1px solid gray;
     border-radius: 10px;
     margin: auto;
-    width: 80%;
+    width: inherit;
     padding: 50px;
     background: white;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .project-title{
     font-size: 30px;
@@ -154,9 +162,12 @@ Da estilos a las clases y se identifica con un punto, ej:
     width: 50%;
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
     margin: auto;
     text-align: center;
+}
+.project-imageContainer img{
+    max-width: 100%;;
 }
 
 /* Estilos experiencia laboral. */
@@ -166,7 +177,7 @@ Da estilos a las clases y se identifica con un punto, ej:
 .jobs{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     padding-bottom: 20px;
@@ -214,10 +225,11 @@ Da estilos a las clases y se identifica con un punto, ej:
 .contact{
     background-color: #0063ff;
     color: white;
-    height: 150px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social{
     /* border: 1px solid red; */
@@ -273,11 +285,12 @@ Da estilos a las clases y se identifica con un punto, ej:
 }
 /* Footer */
 footer{
-    height: 40px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: #39282b;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 .footer-info{
     display: flex;
@@ -300,4 +313,228 @@ footer{
 .footer-credits a{
     color: white;
     text-decoration: none;
+}
+
+/* Desktop first. Se empieza desde el Media Query más grande */
+@media screen and (max-width: 1024px){
+    /* body{
+        border: 1px solid yellow;
+    } */
+    /* .jobs{
+        width: inherit;
+    } */
+    .jobs-box{
+        width: 47%;
+        margin: 1%;
+    }
+    .jobs-box-imageContainer{
+        max-width: 100%;
+    }
+    .job-image{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 767px){
+    /* body{
+        border: 1px solid red;
+    } */
+    /* Sección Header */
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header figure{
+        text-align: center;
+    }
+    .logo{
+        max-width: 100%;
+    }
+    .header ul{
+        display: initial;
+    }
+    .header ul li{
+        height: 30px;
+        justify-content: center;
+    }
+    .header a{
+        justify-content: center;
+    }
+    /* Sección Hero */
+    .hero{
+        justify-content: center;
+    }
+    h1{
+        font-size: 2em;
+        position: absolute;
+        text-align: center;
+        margin-top: 1.3em;
+    }
+    .hero-imageContainer{
+        max-width: 100%;
+    }
+    .hero-image{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Sección portafolio */
+    .project{
+        display: block;
+        padding: 1em;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-title{
+        font-size: 1.3em;
+    }
+    .project-link{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: 1em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: 1em;
+    }
+
+    .jobs-box{
+        width: 90%;
+        margin: 1%;
+    }
+    /* Sección contacto */
+    .contact{
+        display: block;
+        justify-content: center;
+        height: auto;
+    }
+    .form-email{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+    }
+    .form-email button{
+        margin: auto;
+    }
+    #email{
+        margin: .8em;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Sección Footer */
+    .footer{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    /* .footer-link{
+        display: flex;
+        justify-content: center;
+    } */
+    .footer-credits{
+        /* display: flex; */
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px){
+    /* body{
+        border: 1px solid blue;
+    } */
+    h1{
+        font-size: 1.3em;
+    }
+    body{
+        font-size: 16px;
+    }
+    .project-details{
+        font-size: .8em;
+        margin: 1em;
+
+    }
+    .job-detail{
+        margin: 1.2em;
+        margin-top: -2em;
+        padding: 2em;
+        padding-top: .5em;
+    }
+}
+@media screen and (max-width: 320px){
+    .project-details{
+        font-size: 10px;
+    }
+    /* html{
+        font-size: 16px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 1rem;
+    }
+    h1{
+        margin: auto;
+        flex-shrink: 0;
+    }
+    header{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .menu{
+        font-size: .8rem;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+    }
+    .hero .container{
+        justify-content: center;
+    }
+    .hero-image{
+        flex-shrink: 0;
+        height: 150px;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .project{
+        margin: 20px 10px 0;
+        width: auto;
+        padding: 5px;
+    }
+    .project-details{
+        width: 100%;
+    }
+    .project-description{
+        font-size: 1rem;
+    }
+    .social{
+        padding: 0;
+    }
+    .contact .container{
+        justify-content: center;
+    }
+    .form-email{
+        padding: 0;
+    }
+    .form-email button{
+        margin: 10px auto;
+    } */
 }
