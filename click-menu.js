@@ -22,3 +22,15 @@ function validation(event){
             burgerButton.addEventListener('click', hideShow);
     }
 }
+const burgerButton = document.querySelector('#burger-menu');
+        
+        console.log(menu);
+        console.log(burgerButton);
+        burgerButton.addEventListener('click', hideShow);
+        function hideShow(){
+            /* if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{ */
+                menu.classList.toggle('is-active');
+                /* } */
+            }
