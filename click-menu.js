@@ -22,6 +22,7 @@ function validation(event){
             burgerButton.addEventListener('click', hideShow);
     }
 }
+/* validation(ipad); */
 const burgerButton = document.querySelector('#burger-menu');
         
         console.log(menu);
