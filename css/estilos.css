@@ -56,6 +56,7 @@ Header, section, article, nav, etc.
 /* Cuerpo de la página */  
 
 body{
+    background: #39282b;
     margin: 0px;
     color:#49504a;
     font-family: 'Source Sans Pro', sans-serif;
@@ -98,6 +99,7 @@ header {
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
+    width: 85%;
     /* position: sticky;
     top: 0; */
 }
@@ -309,6 +311,8 @@ Da estilos a las clases y se identifica con un punto, ej:
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
 }
 .social{
     /* border: 1px solid red; */
@@ -370,6 +374,8 @@ footer{
     background-color: #39282b;
     padding: 0 10px;
     flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
 }
 .footer-info{
     display: flex;
