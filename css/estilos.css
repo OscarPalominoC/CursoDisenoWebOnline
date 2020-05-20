@@ -59,11 +59,11 @@ body{
     background: #39282b;
     margin: 0px;
     color:#49504a;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', system-ui;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', system-ui;
     font-weight: 600;/*  */
     /* font-style: italic; */
 }
@@ -82,7 +82,7 @@ h1{
 }
 h2{
     color: #026fff !important;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', system-ui;
     text-transform: uppercase;
     margin: 0px auto;
     font-weight: bold;
@@ -224,7 +224,7 @@ Da estilos a las clases y se identifica con un punto, ej:
     font-size: 20px;
 }
 .project strong{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', system-ui;
 }
 .project-details{
     width: 50%;
@@ -376,7 +376,7 @@ Da estilos a las clases y se identifica con un punto, ej:
     margin-top: 10px;
 }
 .form-email label{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', system-ui;
     text-transform: uppercase;
 }
 /* Footer */
