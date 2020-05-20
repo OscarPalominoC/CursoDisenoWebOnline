@@ -169,12 +169,25 @@ Da estilos a las clases y se identifica con un punto, ej:
 /* Sección Hero. */
 .hero{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     height: 300px;
     background-color: #39282b;
     align-items: center;
     
 }
+.hero .heroContainer {
+    width: 85%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.hero .container h1 {
+    width: 50%;
+}
+
 .hero-image{
     object-fit: cover;
     height: 300px;
