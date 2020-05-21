@@ -340,17 +340,17 @@ Da estilos a las clases y se identifica con un punto, ej:
     margin-right: 10px;
 }
 .social-link.twitter{
-    background-image: url('../public/twitter.png');
+    background-image: url('../public/twitter.webp');
     
 }
 .social-link.facebook{
-    background-image: url('../public/facebook.png');
+    background-image: url('../public/facebook.webp');
 }
 .social-link.github{
-    background-image: url('../public/github.png');
+    background-image: url('../public/github.webp');
 }
 .social-link.instagram{
-    background-image: url('../public/instagram.png');
+    background-image: url('../public/instagram.webp');
 }
 .form-email{
     padding-left: 50px;
@@ -360,7 +360,7 @@ Da estilos a las clases y se identifica con un punto, ej:
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
     border-style: solid;
-    background-image: url('../public/mail.png');
+    background-image: url('../public/mail.webp');
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position-x: left;
