@@ -55,6 +55,10 @@ Header, section, article, nav, etc.
 
 /* Cuerpo de la página */  
 
+* {
+    font-display: auto;
+}
+
 body{
     background: #39282b;
     margin: 0px;
